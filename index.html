@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Jonathan Arvay | Independent Systems Engineer</title>
+  <meta name="description" content="Independent systems engineer building deterministic analysis platforms for regulated, audit-sensitive workflows. Focus on evidence-anchored, non-advisory outputs for tax and compliance operations." />
+
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Jonathan Arvay" />
+  <link rel="canonical" href="/" />
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#101824;
+      --text:#e8eef7;
+      --muted:#b6c2d6;
+      --line:#223147;
+      --accent:#7aa2f7;
+      --chip:#132033;
+      --max:900px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 20% 0%, #101a2a 0%, var(--bg) 60%);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 56px}
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:18px 0 10px;
+      border-bottom:1px solid var(--line);
+      gap:16px;
+    }
+    .brand{display:flex; flex-direction:column; gap:4px}
+    .name{font-size:18px; letter-spacing:0.2px; font-weight:650}
+    .role{color:var(--muted); font-size:14px}
+    nav{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+    nav a{font-size:14px; color:var(--muted)}
+    nav a:hover{color:var(--text)}
+    main{padding-top:22px; display:flex; flex-direction:column; gap:16px}
+    .hero{
+      padding:22px;
+      background: linear-gradient(180deg, rgba(16,24,36,0.9), rgba(16,24,36,0.65));
+      border:1px solid var(--line);
+      border-radius:16px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    }
+    .hero h1{margin:0 0 8px; font-size:28px; letter-spacing:0.2px}
+    .hero p{margin:0; color:var(--muted); max-width:72ch}
+    .chips{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap}
+    .chip{
+      font-size:13px;
+      padding:7px 10px;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius:999px;
+      color: var(--muted);
+    }
+    .grid{display:grid; grid-template-columns:1fr; gap:16px}
+    @media (min-width: 860px){
+      .grid{grid-template-columns: 1.1fr 0.9fr}
+    }
+    section.card{
+      padding:18px 18px 16px;
+      background: rgba(16,24,36,0.72);
+      border:1px solid var(--line);
+      border-radius:16px;
+    }
+    section.card h2{margin:0 0 10px; font-size:16px; letter-spacing:0.2px}
+    section.card p{margin:0 0 10px; color:var(--muted)}
+    ul{margin:0; padding-left:18px; color:var(--muted)}
+    li{margin:6px 0}
+    .divider{height:1px; background:var(--line); margin:10px 0 12px}
+    .note{
+      padding:14px 14px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(19,32,51,0.6);
+      color: var(--muted);
+      font-size: 13.5px;
+    }
+    .contact{
+      display:flex; flex-direction:column; gap:8px;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .contact strong{color:var(--text); font-weight:600}
+    footer{
+      margin-top:18px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    code.inline{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12.5px;
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: rgba(19,32,51,0.6);
+      color: var(--text);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="name">Jonathan Arvay</div>
+        <div class="role">Independent Systems Engineer</div>
+      </div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#boundaries">Boundaries</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Deterministic analysis platforms for regulated, audit-sensitive workflows</h1>
+        <p>
+          I build systems where repeatability, traceability, and explicit failure handling matter more than prediction or automation.
+          Current focus: evidence-anchored, non-advisory outputs for tax and compliance operations.
+        </p>
+        <div class="chips">
+          <span class="chip">Deterministic outputs</span>
+          <span class="chip">Evidence anchoring</span>
+          <span class="chip">Explicit failure modes</span>
+          <span class="chip">Scope-locked systems</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <section class="card" id="work">
+          <h2>Current work</h2>
+          <p>
+            I am validating a deterministic analysis suite intended to support tax controversy, audit support, and compliance operations teams.
+            The goal is to standardize factual analysis steps and produce artifacts suitable for review and escalation.
+          </p>
+
+          <div class="divider"></div>
+
+          <h2>Capabilities (non-advisory)</h2>
+          <ul>
+            <li>Document completeness analysis and dependency detection</li>
+            <li>Structured classification with evidence anchors</li>
+            <li>Filing category routing based on explicit indicators</li>
+            <li>IRS notice content extraction (deadlines, required documents, procedural text)</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <p class="note">
+            Outputs are designed to be deterministic and reviewable. Ambiguity is surfaced explicitly rather than resolved by inference.
+          </p>
+        </section>
+
+        <section class="card" id="boundaries">
+          <h2>Boundary statement</h2>
+          <p>
+            The systems described here are intentionally constrained.
+          </p>
+          <ul>
+            <li>No tax advice, legal advice, financial recommendations, or compliance determinations</li>
+            <li>No automated decisions or “best action” suggestions</li>
+            <li>No hidden inference: unknowns remain unknown and are flagged explicitly</li>
+            <li>Evidence anchoring is required for classifications and findings</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h2>Background</h2>
+          <p>
+            Disabled U.S. Army veteran. My engineering approach emphasizes restraint, explicit boundaries, and long-term defensibility in environments where ambiguity carries consequences.
+          </p>
+        </section>
+      </div>
+
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+          <div><strong>Email:</strong> <a href="mailto:jonathan.arvay@gmail.com">jonathan.arvay@gmail.com</a></div>
+          <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jonathan-arvay-b42362294/" target="_blank" rel="noopener">linkedin.com/in/jonathan-arvay-b42362294</a></div>
+          <div><strong>Preferred:</strong> brief, scoped conversations (one workflow at a time)</div>
+        </div>
+      </section>
+
+      <footer>
+        <div>© <span id="y"></span> Jonathan Arvay</div>
+        <div>Keywords: <code class="inline">deterministic analysis</code> <code class="inline">audit-safe</code> <code class="inline">evidence-anchored</code></div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
